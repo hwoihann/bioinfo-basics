@@ -1,0 +1,56 @@
+Peter doherty
+
+
+Jules Hoffmann
+
+
+## Adaptive immunity
+Tasuku Honjo
+
+## Innate immunity: NK cell
+ - Eric Vivier
+ - Zhijian Tian
+
+###  Eric Vivier
+Demaria nature, 2019
+
+ILC: innate lymphoid cells 固有淋巴样细胞
+Type I: cytoxicity
+Type II: alternative macropahge activation
+ADCC: 抗体依赖的细胞杀伤作用
+
+
+
+
+
+
+A comprehensive approach to gene expression profiling in immune cells Author links open overlay panelSabrinaCarpentieraFrançoisRomagnébEricVivierac
+
+### Zhijian Tian
+mitochondiral fragmentation
+
+
+## Immunology and disease
+
+免疫疗法
+immune surveillance against cancer
+
+https://cancerimmunolres.aacrjournals.org/content/6/11/1388
+https://www.nature.com/articles/s41698-017-0031-0
+
+https://jlb.onlinelibrary.wiley.com/doi/full/10.1002/JLB.6AB0718-278R
+
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2069-6
+https://advances.sciencemag.org/content/5/1/eaau9223.full
+https://www.ncbi.nlm.nih.gov/pubmed/26404825
+
+
+
+## Tumor tolerance
+CD19-targeted CAR
+
+FAP: fibroblast activation protein
+多：cold tumor
+少：hot tumor
+
+immune checkpoint list

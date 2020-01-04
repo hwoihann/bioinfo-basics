@@ -1,0 +1,74 @@
+---
+title: "GrowthCuverAnalaysis.rmd"
+author: "whh"
+date: "April 4, 2019"
+output: html_document
+---
+
+ 
+```{r }
+library(data.table)
+library(growthcurver)
+library(ggplot2)
+
+ct <- fread("~/research/project_atatKo/cellCount/data/2019Mar-count2.txt")
+ct$day <- as.numeric(gsub("day","",ct[,Day]))
+mct <-  melt(ct,id = c("CellType","day","rep"), measure =  "Num",value.name = "Num")
+
+
+## try simple sample
+pymt <- ct[CellType=="PYMT_V2"]
+
+gc_fit <- SummarizeGrowth(pymt$day, pymt$Num)
+gc_fit$vals
+plot(gc_fit)
+
+p1 <- ggplot(pymt, aes(x=day,y=Num)) + 
+  geom_point(alpha=0.5) + 
+  theme_bw()
+p1
+```
+
+plot one line
+
+```{r }
+df.predicted <- data.frame(day = pymt$day, pred.wt = predict(gc_fit$model))
+p1 + geom_line(data=df.predicted, aes(y=df.predicted$pred.wt), color="red") + 
+  ylim(c(0,1000))
+```
+
+## Try multiple samples
+
+summary of the Growth data
+
+```{r }
+
+sct <-  dcast(ct, formula = day+rep~CellType, value.var =  "Num",value.name = "Num") 
+models.all <- lapply(sct[, 3:ncol(sct)], function(x) SummarizeGrowth(sct[!is.na(x), 1], x[!is.na(x)]))
+models.all
+
+```
+
+
+```{r }
+df.predicted.plate <- data.frame(day = sct$day)
+for (i in names(sct[,3:ncol(sct)])) 
+{df.predicted.plate[[i]] <- predict(models.all[[i]]$model, newdata = list(t = sct$day))}
+# {df.predicted.plate[[i]] <- predict(models.all[[i]]$model)}
+
+melt2 <- melt(df.predicted.plate, id.vars = "day", variable.name = "sample", value.name = "pred.od")
+head(merge(melt2, ct))
+
+df.final <-melt1 <- melt(df, id.vars = "time", variable.name = "sample", value.name = "od")
+melt2 <- melt(df.predicted.plate, id.vars = "day", variable.name = "CellType", value.name = "pred.number")
+df.final <- merge(melt2, ct)
+
+ggplot(df.final, aes(x=day, y=Num)) + 
+  geom_point(aes(color=CellType), alpha=0.5,size=.85) + 
+  geom_line(aes(y=pred.number,color=CellType),size=1.25) +
+  theme_bw() +
+ylim(c(0,1500)) + xlim(c(0,16)) + ylab(" x 10^4")
+
+```
+
+
