@@ -1,7 +1,10 @@
 # Analysis needs to be repeated
 
-## [paper#1: A Genome-wide CRISPR Screen in Primary Immune Cells to Dissect Regulatory Networks. Cell, 162(3), 675–686. Parnas, O., Jovanovic, M., Eisenhaure, T. M., Herbst, R. H., Dixit, A., Ye, C. J., … Regev, A. (2015).](https://www.sciencedirect.com/science/article/pii/S0092867415008296?via%3Dihub)
+## [paper#1: A Genome-wide CRISPR Screen in Primary Immune Cells to Dissect Regulatory Networks. ](https://www.sciencedirect.com/science/article/pii/S0092867415008296?via%3Dihub)
+author&paper info: Cell, 162(3), 675–686. Parnas, O., Jovanovic, M., Eisenhaure, T. M., Herbst, R. H., Dixit, A., Ye, C. J., … Regev, A. (2015).
+
 引入了全基因组的 CRISPR-Cas9文库到树突状细胞(dc)中，以确定控制细菌脂多糖(LPS)诱导肿瘤坏死因子(Tnf)的基因，这是宿主对病原体反应的一个关键过程，通过Tlr4途径介导。
+
 ### paper#1. Summs
 Introduce genome-wide pooled CRISPR-Cas9 libraries into dendritic cells (DCs) to identify genes that control the induction of tumor necrosis factor (Tnf) by bacterial lipopolysaccharide (LPS), a key process in the host response to pathogens, mediated by the Tlr4 pathway.
 
@@ -20,12 +23,12 @@ currently **two major strategies for associating targets with their putative reg
   1. observational (correlative) approaches that relate them based on statistical dependencies in their quantities or physical associations and
   2. perturbational (causal) approaches that relate them by the effect that a perturbation in a putative regulator has on its target.
 
+
 >genomic profile classification (e.g.,
    - of mRNAs,
    - protein-DNA binding,
    - protein levels,
    - protein phosphorylation
-
 
 In such screens, pooled libraries are introduced into cell lines and cellular phenotypes are selected based on cell lethality or growth.
  - Cell origin: bone-marrow-derived dendritic cells (BMDCs, or DCs) isolated from Cas9-expressing transgenic mice.
@@ -88,11 +91,19 @@ e. CDFs of screen ranks for the 35 genes in the TLR pathway from LPS to Tnf (KEG
 
 ## discussion
 ### tl#1: 为什么可以发到这个文章上，新意在哪里？
+解决的问题：
+1. “更新了原代细胞研究策略” = 可以通过CRISPR screen技术更系统地探索功能：Systematically dissecting circuits in other primary mammalian cells
+
+
+研究免疫细胞的原因
+1. AR本来就比较熟悉这方面，有资源
+2. 免疫细胞的FACS assay成熟，细胞表面因子CD选择多
+3.
+
 
 ### tl#2: 找到关键基因后怎么缩小范围？
 
 ### tl#3: 涉及的生信分析方法？
-
 
 
 

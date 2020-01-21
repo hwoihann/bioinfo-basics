@@ -15,7 +15,10 @@ reagent recipes
 
 
 nouns I need to remember and review from daily reading source, including
- - biological terms, especially what the  root it's from
+ - biological terms, especially what the root it's from
  - oral and literal English
 
 __note nameing: according to the week and month number__
+
+add paperNotes directory from 2019-week43
+add dailyAbstact赏析, started from 2020-week3
