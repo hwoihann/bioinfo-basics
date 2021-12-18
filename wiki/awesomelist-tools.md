@@ -1,7 +1,14 @@
 # databases
-
-癌症生物信息学网站
+1. 癌症生物信息学网站
 https://ccb.nki.nl/
+
+
+2. CTRP v2: caner therapeutics response portal
+https://portals.broadinstitute.org/ctrp/?page=#ctd2BodyHome
+The Cancer Therapeutics Response Portal (CTRP) links genetic, lineage, and other cellular features of cancer cell lines to small-molecule sensitivity with the goal of accelerating discovery of patient-matched cancer therapeutics.
+
+
+
 
 
 (汇总数据库 Harmonizome)[https://amp.pharm.mssm.edu/Harmonizome/]
@@ -9,8 +16,11 @@ https://ccb.nki.nl/
 定义细胞种类的网站：
 1. [Cell ontology](http://bioportal.bioontology.org/ontologies/CL?p=classes&conceptid=CL%3A0000057#details)
 2. [cellfinder](http://cellfinder.org/ontology?id=CF_38039)
-3.
 
+
+
+
+## 数据集
 
 查基因信息的小众网站
 http://genomicscape.com/microarray/expression.php?gn=ATAT1&gi=228510_at&act=annotation
@@ -18,9 +28,11 @@ http://genomicscape.com/microarray/expression.php?gn=ATAT1&gi=228510_at&act=anno
 
 生存分析工具和数据包
 1. Madden, S. F., Clarke, C., Gaule, P., Aherne, S. T., O’Donovan, N., Clynes, M., … Gallagher, W. M. (2013). BreastMark: An Integrated Approach to Mining Publicly Available Transcriptomic Datasets Relating to Breast Cancer Outcome. Breast Cancer Research, 15(4), R52. https://doi.org/10/gccvj2
+comment： 网站不好用
 
 2. [genefu](http://www.bioconductor.org/packages/release/bioc/html/genefu.html)，非常详细地记录了各种亚型分类地方法，很便捷
   >Gendoo DM, Ratanasirigulchai N, Schroeder MS, Pare L, Parker JS, Prat A, Haibe-Kains B (2019). genefu: Computation of Gene Expression-Based Signatures in Breast Cancer. R package version 2.16.0, http://www.pmgenomics.ca/bhklab/software/genefu.
+comment: 数据提取太麻烦
 
 3. 各种数据集的人工汇总：[SurvExpress](http://23.96.106.14:8080/Biomatec/SurvivaX.jsp)
 
